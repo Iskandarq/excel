@@ -11,7 +11,7 @@ const readExcel = async (file) => {
       const wsNames = workBook.SheetNames;
 
       if (wsNames.length > 2) {
-        const firstSheet = workBook.Sheets[wsNames[0]];
+        const firstSheet = workBook.Sheets[wsNames[0]];// Использовать данную строчку нельзя, так как код обрушится полностью
         const secondSheet = workBook.Sheets[wsNames[1]];
         const thirdSheet = workBook.Sheets[wsNames[2]];
 
